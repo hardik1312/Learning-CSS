@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    padding:10%;
+    font-size:2rem;
+    font-family:'Roboto', sans-serif;
+
+}
+/* always follow this flow: a class, a:visited pseudo-class,
+a:hover, and then a:active, else these may not work properly. */
+a{
+    text-decoration: none;
+    color:hsl(207, 44%, 49%);
+    cursor:pointer;
+}
+
+/* main{
+    opacity:0.5;
+} */
+
+/* a:visited {
+    color:purple;
+} */
+
+a:hover, a:focus {
+    color:hsl(189, 44%, 49%,0.7);
+    background-color: gold;;
+    /* opacity:0.7; */
+}
+
+a:active{
+    color:red;
+}

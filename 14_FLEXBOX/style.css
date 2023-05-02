@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid #000;
+    display: flex;
+    gap: 1rem;
+    justify-content:space-evenly; /* horizontal flexing */
+    align-items: center; /* vertical flexing */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap; /* short hand for flex-direction and flex-wrap */
+    align-content: space-evenly;
+}
+
+.box {
+    /* min-width: 100px; */
+    /* min-height: 100px; */
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* flex-grow: 1; */
+    /* flex-shrink: 1;
+    flex-basis: 250px; */
+
+    /* flex-grow, flex-shrink, and flex-basis 
+    have a shorthand:display:
+    flex: flex-grow flex-shrink flex-basis */
+    flex: 1 1 250px;
+}
+
+/* .box:nth-child(2){
+    flex-grow: 2;
+} */
+
+.box:nth-child(2){
+    flex: 2 2 250px;
+    order: -1;
+}
